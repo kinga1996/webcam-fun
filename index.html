@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun with webcam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="photosBackground">
+		<div class="controls">
+			<button id="takePhoto" onclick="takePhoto()">Take photo!</button>
+			<p>You can select the appropriate filter for the photo with the buttons below this text and then take the photo with the "Take photo!". The photos taken will appear at the bottom, if you click on them you can download them! </p>
+
+			<div class="buttons">
+			<button onclick="makeMeRed()">Make me red</button>
+			<input type="range" min="4" max="10" value="7" id="rangeRed">
+			</div>
+
+			<div class="buttons">
+			<button onclick="makeMeGreen()">Make me green</button>
+			<input type="range" min="4" max="10" value="7" id="rangeGreen">
+			</div>
+
+			<div onclick="makeMeBlue()" class="buttons">
+			<button>Make me blue</button>
+			<input type="range" min="4" max="10" value="7" id="rangeBlue">
+			</div>
+
+			<div class="buttons">
+			<button onclick="makeMeGhost()">Make me like a ghost</button>
+			<input type="range" min="1" max="30" value="15" id="rangeGhost">
+			</div>
+
+			<div class="buttons">
+			<button onclick="deleteFilters()">Delete filters</button>
+			</div>
+
+		</div>
+
+		<canvas class="bigPhoto"></canvas>
+		<video class="smallPhoto"></video>
+		<div class="photos"></div>
+
+	</div>
+
+	<audio id="click" src="click.mp3" hidden></audio>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
