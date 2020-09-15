@@ -38,38 +38,46 @@ function videoCanvas(){
 		if (red == true){
 		pixels = redEffect(pixels, valueOfRed);
 		document.querySelector('#rangeRed').style.display = "inline";
+		document.querySelector('#makeMeRed').style.display = "none";
 		}
 
 		if (red == false){
 		document.querySelector('#rangeRed').style.display = "none";
+		document.querySelector('#makeMeRed').style.display = "inline";
 		}	
 
 		if (green == true){
 		pixels = greenEffect(pixels, valueOfGreen);
 		document.querySelector('#rangeGreen').style.display = "inline";
+		document.querySelector('#makeMeGreen').style.display = "none";
 		}
 
 		if (green == false){
 		document.querySelector('#rangeGreen').style.display = "none";
+		document.querySelector('#makeMeGreen').style.display = "inline";
 		}
 
 		if (blue == true){
 		pixels = blueEffect(pixels, valueOfBlue);
 		document.querySelector('#rangeBlue').style.display = "inline";
+		document.querySelector('#makeMeBlue').style.display = "none";
 		}
 
 		if (blue == false){
 		document.querySelector('#rangeBlue').style.display = "none";
+		document.querySelector('#makeMeBlue').style.display = "inline";
 		}
 
 		if (ghost == true){
 		pixels = ghostEffect(pixels);
 		document.querySelector('#rangeGhost').style.display = "inline";
+		document.querySelector('#makeMeGhost').style.display = "none";
 		ctx.globalAlpha = (0.01 * valueOfGhost);
 		}
 
 		if (ghost == false){
 		document.querySelector('#rangeGhost').style.display = "none";
+		document.querySelector('#makeMeGhost').style.display = "inline";
 		ctx.globalAlpha = 1;
 		}
 

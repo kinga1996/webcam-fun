@@ -10,7 +10,7 @@ html {
 }
 
 .photosBackground{
-	width: 95vw;
+	width: 80vw;
 	margin: auto;
 	background-color: rgba(255,255,255,0.85);
 	padding-top: 1vh;
@@ -31,7 +31,16 @@ button{
 .buttons{
 	display: block;
 	margin-bottom: 1vh;
-	margin-left: 2vw;
+	margin-left: 1vw;
+}
+
+.buttons button{
+	width: 20vw;
+}
+.controls{
+	width: 75%;
+	text-align: center;
+	align-items: center;
 }
 
 .controls input{
@@ -39,8 +48,7 @@ button{
 }
 
 p{
-	width: 70%;
-	margin-left: 2vw;
+	margin-left: 1vw;
 }
 
 #takePhoto{
@@ -58,7 +66,7 @@ input{
 }
 
 .bigPhoto{
-	max-height: 70vh;
+	min-width: 55%; max-width: 100%;
 	margin-left: auto;
     margin-right: auto;
     display: block;
@@ -68,7 +76,7 @@ input{
 .smallPhoto{
 	position: absolute;
 	top:3vh;
-	right: 5vw;
+	right: 11vw;
 	min-width: 16vw; max-width: 17vw;
 }
 
@@ -83,7 +91,7 @@ input{
 .photos a:nth-child(4n+3) img { transform: rotate(8deg); }
 .photos a:nth-child(4n+4) img { transform: rotate(-11deg); }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 700px){
 	.smallPhoto{
 		display: none;
 	}
@@ -94,5 +102,8 @@ input{
 	p{
 		margin: auto;
 		margin-bottom: 1vh;
+	}
+	.controls{
+		width: 100%;
 	}
 }
