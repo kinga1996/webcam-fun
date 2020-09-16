@@ -1,7 +1,8 @@
 html {
   box-sizing: border-box;
-  background-image: url('tło.jpg');
+  background: url("tło.jpg") center no-repeat;
   background-size: cover;
+  min-height: 100vh;
   font-family: 'Arial Rounded MT', 'Calibri', 'Helvetica';
 }
 
